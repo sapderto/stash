@@ -1,0 +1,1 @@
+cvebot is TG bot, which notify about new cves

@@ -6,3 +6,6 @@ This script turns given domain names (from file) into ip addresses using local d
 
 # Report Transformer
 This script process XML reports to XLSX or JSON format
+
+# cvebot
+This is bot for notifications with new cve

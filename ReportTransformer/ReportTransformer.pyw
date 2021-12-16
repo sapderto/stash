@@ -39,8 +39,9 @@ def report_action():
     selected_sections = list(CHECK_BOX.curselection())
     current_scheme_of_writing = [list(FULL_CHOISE_MAP.values())[index] for index in selected_sections]
     saving_file = tkinter.filedialog.asksaveasfilename(
-        filetypes=(("XLSX", "*.xlsx"), ("JSON", "*.json"))
+        filetypes=(("XLSX", "*.xlsx"), ("JSON", "*.json")), defaultextension="xlsx"
     )
+    print(saving_file)
     result_base = []
     for inputs in file_names:
         result_base.extend(
@@ -78,7 +79,7 @@ def choose_file_action():
     main_window.geometry("270x540")
     main_window.minsize(270, 540)
     main_window.maxsize(290, 540)
-
+    print()
     CHECK_BOX.insert(0, *CHECK_BOX_GROUP)
     CHECK_BOX.pack(padx=10, pady=10, expand=1)
     report_button.pack(expand=1)
